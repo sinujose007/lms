@@ -1,0 +1,568 @@
+.container {max-width: 1200px;}
+.mainD{
+	padding-top:200px;
+	text-align:center;
+}
+.mainD h3{
+	padding-bottom:100px;
+}
+.mainSub form{
+	width:50%;
+	margin:0 auto;
+	text-align:center;
+	padding-top:60px;
+}
+.mainSub label{
+	font-size:25px;
+	font-weight:bold;
+}
+.mainSub button{
+	min-width:200px;
+	font-weight:bold;
+	background:#000;
+	color:white;
+	border:1px solid #111;
+}
+.flip-clock-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  max-width: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.flip-clock-wrapper .flip {
+  box-shadow: none;
+  margin-bottom: 80px;
+}
+
+.flip-clock-wrapper ul {
+  position: relative;
+  float: unset;
+  margin: 3px;
+  width: 90px;
+  height: 120px;
+  font-size: 36px;
+  font-weight: unset;
+  line-height: unset;
+  border-radius: 10px;
+  background: #0d1629;
+}
+
+.flip-clock-wrapper ul li {
+  line-height: unset;
+}
+
+.flip-clock-wrapper ul li a div {
+  outline: none;
+}
+
+.flip-clock-wrapper ul li a div div.inn {
+  font-family:  Quantico-Regular;
+  color: #fff;
+  font-size: 120px;
+  font-weight: unset;
+  text-align: unset;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 200%;
+  text-shadow: 0 0px 0px #000;
+  background-color: #0d1629;
+  border-radius: 10px;
+} 
+
+.flip-clock-wrapper ul li a div .shadow {
+  border-radius: 10px;
+}
+
+.flip-clock-wrapper ul li a div.up:after {
+  display: none;
+}
+
+/*---------------------------------------------*/
+.flip-clock-divider {
+  display: block;
+  float: unset;
+  position: relative;
+  width: 68px;
+  height: 120px;
+}
+
+.flip-clock-divider span {
+  display: none;
+}
+
+.flip-clock-divider::before {
+  content: ":";
+  font-family: Quantico-Regular;
+  color: #fff;
+  font-size: 120px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.flip-clock-divider.days::before {
+  display: none;
+}
+
+.flip-clock-divider::after {
+  font-family: Montserrat-Bold;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  display: block;
+  text-align: center;
+  width: 193px;
+  position: absolute;
+  left: 100%;
+  top: 100%;
+  padding-top: 23px;
+}
+
+.flip-clock-divider.days::after {
+  content: "days";
+}
+
+.flip-clock-divider.hours::after {
+  content: "hrs";
+}
+
+.flip-clock-divider.minutes::after {
+  content: "min";
+}
+
+.flip-clock-divider.seconds::after {
+  content: "sec";
+}
+
+@media (max-width: 1200px) {
+  .flip-clock-wrapper {
+   
+    margin-right: 10px;
+  }
+
+  .flip-clock-divider.days {
+    width: 10px;
+  }
+  
+
+  .flip-clock-divider.minutes {
+    width: 10px;
+  }
+
+  .flip-clock-divider.minutes::before {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .flip-clock-wrapper {
+    max-width: 210px;
+    margin-right: 10px;
+  }
+
+  .flip-clock-divider {
+    width: 10px;
+  }
+
+  .flip-clock-divider::before {
+    display: none;
+  }
+}
+
+.cl0 {color: #fff;}
+
+.s1-txt1 {
+  font-family: Montserrat-Bold;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+
+.l1-txt1 {
+  font-family: Montserrat-Thin;
+  font-size: 50px;
+  color: #fff;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.size1 {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.size2 {
+  width: 100%;
+  height: 50px;
+}
+
+.size3 {
+  width: 36px;
+  height: 36px;
+}
+
+.wsize1 {
+  width: 390px;
+  max-width: 100%;
+}
+
+
+.hsize1 {
+  min-height: 500px;
+}
+
+
+
+.bg0 {background-color: #fff;}
+
+.bg-img1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+.bor1 {
+  border-radius: 10px;
+}
+
+
+
+.placeholder0::-webkit-input-placeholder { color: #999999;}
+.placeholder0:-moz-placeholder { color: #999999;}
+.placeholder0::-moz-placeholder { color: #999999;}
+.placeholder0:-ms-input-placeholder { color: #999999;}
+
+/*---------------------------------------------*/
+.overlay1 {
+  position: relative;
+  z-index: 1;
+}
+.overlay1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #FFFFFF;
+  background: -webkit-linear-gradient(top, #000000, #FFFFFF);
+  background: -o-linear-gradient(top, #000000, #FFFFFF);
+  background: -moz-linear-gradient(top, #000000, #FFFFFF);
+  background: linear-gradient(top, #000000, #FFFFFF);
+  opacity: 0.8;
+}
+
+
+/*---------------------------------------------*/
+.wrappic1 {
+  display: block;
+  flex-grow: 1;
+}
+
+.wrappic1 img {
+  max-width: 100%;
+}
+
+/*---------------------------------------------*/
+.how-social {
+  color: #fff;
+  font-size: 18px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.how-social:hover {
+  background-color: #fff;
+  color: #0d1629;
+}
+
+
+.flip-clock-wrapper * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-clock-wrapper a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #ccc; }
+
+.flip-clock-wrapper a:hover {
+  color: #fff; }
+
+.flip-clock-wrapper ul {
+  list-style: none; }
+
+.flip-clock-wrapper.clearfix:before,
+.flip-clock-wrapper.clearfix:after {
+  content: " ";
+  display: table; }
+
+.flip-clock-wrapper.clearfix:after {
+  clear: both; }
+
+.flip-clock-wrapper.clearfix {
+  *zoom: 1; }
+
+/* Main */
+.flip-clock-wrapper {
+  font: normal 11px "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-user-select: none; }
+
+.flip-clock-meridium {
+  background: none !important;
+  box-shadow: 0 0 0 !important;
+  font-size: 36px !important; }
+
+.flip-clock-meridium a { color: #313333; }
+
+.flip-clock-wrapper {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin: 1em;
+}
+
+.flip-clock-wrapper:before,
+.flip-clock-wrapper:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.flip-clock-wrapper:after {
+    clear: both;
+}
+
+/* Skeleton */
+.flip-clock-wrapper ul {
+  position: relative;
+  float: left;
+  margin: 5px;
+  width: 60px;
+  height: 90px;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 87px;
+  border-radius: 6px;
+  background: #000;
+}
+
+.flip-clock-wrapper ul li {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 87px;
+  text-decoration: none !important;
+}
+
+.flip-clock-wrapper ul li:first-child {
+  z-index: 2; }
+
+.flip-clock-wrapper ul li a {
+  display: block;
+  height: 100%;
+  -webkit-perspective: 200px;
+  -moz-perspective: 200px;
+  perspective: 200px;
+  margin: 0 !important;
+  overflow: visible !important;
+  cursor: default !important; }
+
+.flip-clock-wrapper ul li a div {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  font-size: 80px;
+  overflow: hidden; 
+  outline: 1px solid transparent; }
+
+.flip-clock-wrapper ul li a div .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2; }
+
+.flip-clock-wrapper ul li a div.up {
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  top: 0; }
+
+.flip-clock-wrapper ul li a div.up:after {
+  content: "";
+  position: absolute;
+  top: 44px;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.flip-clock-wrapper ul li a div.down {
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  bottom: 0;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.flip-clock-wrapper ul li a div div.inn {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 200%;
+  color: #ccc;
+  text-shadow: 0 1px 2px #000;
+  text-align: center;
+  background-color: #333;
+  border-radius: 6px;
+  font-size: 70px; }
+
+.flip-clock-wrapper ul li a div.up div.inn {
+  top: 0; }
+
+.flip-clock-wrapper ul li a div.down div.inn {
+  bottom: 0; }
+
+/* PLAY */
+.flip-clock-wrapper ul.play li.flip-clock-before {
+  z-index: 3; }
+
+.flip-clock-wrapper .flip {   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); }
+
+.flip-clock-wrapper ul.play li.flip-clock-active {
+  -webkit-animation: asd 0.5s 0.5s linear both;
+  -moz-animation: asd 0.5s 0.5s linear both;
+  animation: asd 0.5s 0.5s linear both;
+  z-index: 5; }
+
+.flip-clock-divider {
+  float: left;
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 100px; }
+
+.flip-clock-divider:first-child {
+  width: 0; }
+
+.flip-clock-dot {
+  display: block;
+  background: #323434;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  left: 5px; }
+
+.flip-clock-divider .flip-clock-label {
+  position: absolute;
+  top: -1.5em;
+  right: -86px;
+  color: black;
+  text-shadow: none; }
+
+.flip-clock-divider.minutes .flip-clock-label {
+  right: -88px; }
+
+.flip-clock-divider.seconds .flip-clock-label {
+  right: -91px; }
+
+.flip-clock-dot.top {
+  top: 30px; }
+
+.flip-clock-dot.bottom {
+  bottom: 30px; }
+
+
+.flip-clock-wrapper ul.play li.flip-clock-active .down {
+  z-index: 2;
+  -webkit-animation: turn 0.5s 0.5s linear both;
+  -moz-animation: turn 0.5s 0.5s linear both;
+  animation: turn 0.5s 0.5s linear both; }
+
+
+.flip-clock-wrapper ul.play li.flip-clock-before .up {
+  z-index: 2;
+  -webkit-animation: turn2 0.5s linear both;
+  -moz-animation: turn2 0.5s linear both;
+  animation: turn2 0.5s linear both; }
+
+
+.flip-clock-wrapper ul li.flip-clock-active {
+  z-index: 3; }
+  
+  
+  @media (max-width: 700px){
+	  .days,.hours,.minutes,.seconds{
+		 visibility:hidden;
+	  }
+	  .flip-clock-wrapper{margin:0 auto;}
+	  .flip-clock-wrapper{width:33%;}
+  }
+  
+   @media (max-width: 450px){
+	  .days,.hours,.minutes,.seconds{
+		 visibility:hidden;
+	  }
+	  .flip-clock-wrapper{margin:0 auto;}
+	  .flip-clock-wrapper{width:50%;}
+  }
+  
+  
+  
